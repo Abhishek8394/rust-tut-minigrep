@@ -31,7 +31,7 @@ impl Config{
             None => String::from(""),
         };
 
-        let mut case_sensitive = ci_arg == String::from("-i");
+        let mut case_sensitive = ci_arg != String::from("-i");
         // if arg == "-i" {
         //     case_sensitive = false;
         // }
